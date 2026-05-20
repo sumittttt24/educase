@@ -1,0 +1,66 @@
+.landing-page {
+  justify-content: flex-end;
+  padding-bottom: 32px;
+  background: var(--bg-light);
+  position: relative;
+}
+
+/* Decorative gradient circle - top right */
+.landing-page::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(108, 37, 255, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.landing-content {
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.landing-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.landing-subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  max-width: 280px;
+}
+
+.landing-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.landing-actions .btn:first-child {
+  animation: fadeUp 0.5s ease forwards;
+  animation-delay: 0.15s;
+  opacity: 0;
+}
+
+.landing-actions .btn:last-child {
+  animation: fadeUp 0.5s ease forwards;
+  animation-delay: 0.25s;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,33 @@
+.signup-page {
+  padding-top: 32px;
+  background: var(--bg-light);
+}
+
+.signup-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 22px;
+  animation: fadeUp 0.4s ease forwards;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.signup-btn-wrapper {
+  margin-top: auto;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  animation: fadeUp 0.4s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

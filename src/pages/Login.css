@@ -1,0 +1,41 @@
+.login-page {
+  padding-top: 32px;
+  background: var(--bg-light);
+  position: relative;
+}
+
+.login-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  animation: fadeUp 0.4s ease forwards;
+}
+
+.login-subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 28px;
+  animation: fadeUp 0.4s ease forwards;
+  animation-delay: 0.08s;
+  opacity: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-btn {
+  margin-top: 8px;
+  animation: fadeUp 0.4s ease forwards;
+  animation-delay: 0.25s;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

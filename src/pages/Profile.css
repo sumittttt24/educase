@@ -1,0 +1,117 @@
+.profile-page {
+  background: var(--bg-light);
+}
+
+/* Header */
+.profile-header {
+  padding: 16px 24px 12px;
+  border-bottom: 1px solid #eee;
+  background: var(--bg-white);
+  animation: fadeDown 0.35s ease forwards;
+}
+
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile-header-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* User Card */
+.profile-card {
+  padding: 20px 24px;
+  background: var(--bg-white);
+  animation: fadeUp 0.45s ease forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile-user-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.profile-avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f0e6ff;
+  object-fit: cover;
+  display: block;
+  transition: border-color 0.3s ease;
+}
+
+.profile-avatar:hover {
+  border-color: var(--primary);
+}
+
+.profile-camera-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark, #5a1de0) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+  box-shadow: 0 2px 6px rgba(108, 37, 255, 0.3);
+}
+
+.profile-camera-badge:hover {
+  transform: scale(1.1);
+}
+
+.profile-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.profile-email {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.profile-description {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  background: var(--bg-light);
+  border-radius: var(--radius-md);
+  border-left: 3px solid rgba(108, 37, 255, 0.2);
+}
+
+.profile-divider {
+  border: none;
+  border-top: 1.5px dashed #d1d5db;
+}
