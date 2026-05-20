@@ -1,0 +1,31 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.landing-top-area {
+  flex: 1;
+  background-color: var(--bg-mobile-top);
+}
+
+.landing-bottom {
+  padding: 24px 24px 36px;
+  background-color: var(--bg-mobile);
+}
+
+.landing-bottom .page-heading {
+  margin-bottom: 6px;
+}
+
+.landing-bottom .page-subtitle {
+  margin-bottom: 24px;
+}
+
+.landing-bottom .btn {
+  margin-bottom: 12px;
+}
+
+.landing-bottom .btn:last-child {
+  margin-bottom: 0;
+}

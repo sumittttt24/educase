@@ -1,0 +1,85 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--bg-mobile-top);
+  overflow-y: auto;
+}
+
+.signup-content {
+  padding: 28px 24px 32px;
+}
+
+.signup-content .page-heading {
+  margin-bottom: 24px;
+}
+
+.signup-content .input-group {
+  margin-bottom: 18px;
+}
+
+.required {
+  color: var(--purple-primary);
+}
+
+/* Agency radio group */
+.agency-group {
+  margin-bottom: 28px;
+  margin-top: 4px;
+}
+
+.agency-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-option input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--border-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.radio-option input[type='radio']:checked + .radio-custom {
+  border-color: var(--purple-primary);
+}
+
+.radio-option input[type='radio']:checked + .radio-custom::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--purple-primary);
+}
+
+.radio-text {
+  font-size: 14px;
+  color: var(--text-dark);
+}
